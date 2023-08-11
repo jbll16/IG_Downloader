@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ui_downloader.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="title">Welcome</div>
+      <div class="subtitle">Intragram Downloader</div>
+      <div class="input-container ic1">
+        <input id="url" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="url" class="placeholder">Url</label>
+      </div>
+      <button type="text" class="submit" onclick="getFormData()">Download</button>
+    </div>
+  </body>
+  <script>
+    function getFormData() {
+      // Get form element by its ID
+      const form = document.getElementById("myForm");
+
+      // Get input values
+      const url = document.getElementById("url").value;
+
+      // Do something with the form data (e.g., display or process it)
+      console.log("url:", url);
+
+      // You can also submit the form data to a server using AJAX or other methods
+      // For example, using Fetch API to send a POST request to the server
+      // fetch('url/to/submit/form', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({ name: name, email: email })
+      // })
+      // .then(response => response.json())
+      // .then(data => {
+      //   console.log('Server response:', data);
+      // })
+      // .catch(error => {
+      //   console.error('Error:', error);
+      // });
+    }
+  </script>
+</html>
